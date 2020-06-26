@@ -5,7 +5,6 @@ const router = new express.Router();
 // const auth = require("../../../Middleware/auth");
 router.post("/users/register", async (req, res) => {
   const user = new User(req.body);
-
   try {
     await user.save();
     const token = await user.generateAuthToken();
@@ -80,7 +79,7 @@ router.post("/api/book",  async (req, res) => {
     }
     for (let i = 0; i < booking.length; i++) {
       if (booking[i].slot === slot)
-        return res.send({ success: false, msg: "slot already booked" });
+        return res.send({ success: false, msg: "slot already booked! Please choose other slot." });
     }
     await Facility.updateOne(
       { _id: facId },
