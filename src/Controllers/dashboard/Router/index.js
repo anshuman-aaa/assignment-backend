@@ -2,7 +2,7 @@ const express = require("express");
 const User = require("../modal/user");
 const Facility = require("../modal/facility");
 const router = new express.Router();
-const auth = require("../../../Middleware/auth");
+// const auth = require("../../../Middleware/auth");
 router.post("/users/register", async (req, res) => {
   const user = new User(req.body);
 
@@ -50,7 +50,7 @@ router.post("/api/facility", async (req, res) => {
   }
 });
 
-router.post("/api/book", auth, async (req, res) => {
+router.post("/api/book",  async (req, res) => {
   try {
     // console.log(req.body);
     const { email, slot, facId } = req.body;
