@@ -1,0 +1,351 @@
+{
+    "email": "",
+    "closed_at": null,
+    "created_at": "2020-03-01T07:18:46-05:00",
+    "updated_at": "2020-03-01T07:18:47-05:00",
+    "number": {
+        "$numberInt": "5"
+    },
+    "note": null,
+    "token": "bf2497b5361cf9f9f4d5bb3ddc8b8162",
+    "gateway": "bogus",
+    "test": true,
+    "total_price": "200.00",
+    "subtotal_price": "200.00",
+    "total_weight": {
+        "$numberInt": "0"
+    },
+    "total_tax": "0.00",
+    "taxes_included": false,
+    "currency": "INR",
+    "financial_status": "authorized",
+    "confirmed": true,
+    "total_discounts": "0.00",
+    "total_line_items_price": "200.00",
+    "cart_token": "",
+    "buyer_accepts_marketing": false,
+    "name": "#1005",
+    "referring_site": "https://anshumanaaa.myshopify.com/products/jeans",
+    "landing_site": "/wallets/checkouts.json",
+    "cancelled_at": null,
+    "cancel_reason": null,
+    "total_price_usd": "2.77",
+    "checkout_token": "03af1f77047799fb912f495ca52a30c2",
+    "reference": null,
+    "user_id": null,
+    "location_id": null,
+    "source_identifier": null,
+    "source_url": null,
+    "processed_at": "2020-03-01T07:18:46-05:00",
+    "device_id": null,
+    "phone": "+918116986080",
+    "customer_locale": "en",
+    "app_id": {
+        "$numberInt": "580111"
+    },
+    "browser_ip": "203.110.242.16",
+    "landing_site_ref": null,
+    "order_number": {
+        "$numberInt": "1005"
+    },
+    "discount_applications": [],
+    "discount_codes": [],
+    "note_attributes": [],
+    "payment_gateway_names": ["bogus"],
+    "processing_method": "direct",
+    "checkout_id": {
+        "$numberDouble": "12363864014987"
+    },
+    "source_name": "web",
+    "fulfillment_status": null,
+    "tax_lines": [],
+    "tags": "",
+    "contact_email": null,
+    "order_status_url": "https://anshumanaaa.myshopify.com/34655240331/orders/bf2497b5361cf9f9f4d5bb3ddc8b8162/authenticate?key=7022cd346b8dc490195908c9b1b388b6",
+    "presentment_currency": "INR",
+    "total_line_items_price_set": {
+        "shop_money": {
+            "amount": "200.00",
+            "currency_code": "INR"
+        },
+        "presentment_money": {
+            "amount": "200.00",
+            "currency_code": "INR"
+        }
+    },
+    "total_discounts_set": {
+        "shop_money": {
+            "amount": "0.00",
+            "currency_code": "INR"
+        },
+        "presentment_money": {
+            "amount": "0.00",
+            "currency_code": "INR"
+        }
+    },
+    "total_shipping_price_set": {
+        "shop_money": {
+            "amount": "0.00",
+            "currency_code": "INR"
+        },
+        "presentment_money": {
+            "amount": "0.00",
+            "currency_code": "INR"
+        }
+    },
+    "subtotal_price_set": {
+        "shop_money": {
+            "amount": "200.00",
+            "currency_code": "INR"
+        },
+        "presentment_money": {
+            "amount": "200.00",
+            "currency_code": "INR"
+        }
+    },
+    "total_price_set": {
+        "shop_money": {
+            "amount": "200.00",
+            "currency_code": "INR"
+        },
+        "presentment_money": {
+            "amount": "200.00",
+            "currency_code": "INR"
+        }
+    },
+    "total_tax_set": {
+        "shop_money": {
+            "amount": "0.00",
+            "currency_code": "INR"
+        },
+        "presentment_money": {
+            "amount": "0.00",
+            "currency_code": "INR"
+        }
+    },
+    "line_items": [{
+        "id": {
+            "$numberDouble": "4505377439883"
+        },
+        "variant_id": {
+            "$numberDouble": "32588493521035"
+        },
+        "title": "Jeans",
+        "quantity": {
+            "$numberInt": "1"
+        },
+        "sku": "100",
+        "variant_title": "",
+        "vendor": "anshumanaaa",
+        "fulfillment_service": "manual",
+        "product_id": {
+            "$numberDouble": "4604156117131"
+        },
+        "requires_shipping": true,
+        "taxable": true,
+        "gift_card": false,
+        "name": "Jeans",
+        "variant_inventory_management": "shopify",
+        "properties": [],
+        "product_exists": true,
+        "fulfillable_quantity": {
+            "$numberInt": "1"
+        },
+        "grams": {
+            "$numberInt": "0"
+        },
+        "price": "200.00",
+        "total_discount": "0.00",
+        "fulfillment_status": null,
+        "price_set": {
+            "shop_money": {
+                "amount": "200.00",
+                "currency_code": "INR"
+            },
+            "presentment_money": {
+                "amount": "200.00",
+                "currency_code": "INR"
+            }
+        },
+        "total_discount_set": {
+            "shop_money": {
+                "amount": "0.00",
+                "currency_code": "INR"
+            },
+            "presentment_money": {
+                "amount": "0.00",
+                "currency_code": "INR"
+            }
+        },
+        "discount_allocations": [],
+        "admin_graphql_api_id": "gid://shopify/LineItem/4505377439883",
+        "tax_lines": [],
+        "origin_location": {
+            "id": {
+                "$numberDouble": "1805142229131"
+            },
+            "country_code": "IN",
+            "province_code": "WB",
+            "name": "anshumanaaa",
+            "address1": "MMM HALL OF RESIDENCE,SDS BLOCK,ROOM NO 334 , IIT KGP",
+            "address2": "",
+            "city": "Select",
+            "zip": "721302"
+        }
+    }],
+    "fulfillments": [],
+    "refunds": [],
+    "total_tip_received": "0.0",
+    "admin_graphql_api_id": "gid://shopify/Order/2053422284939",
+    "shipping_lines": [{
+        "id": {
+            "$numberDouble": "1684028915851"
+        },
+        "title": "Standard",
+        "price": "0.00",
+        "code": "Standard",
+        "source": "shopify",
+        "phone": null,
+        "requested_fulfillment_service_id": null,
+        "delivery_category": null,
+        "carrier_identifier": null,
+        "discounted_price": "0.00",
+        "price_set": {
+            "shop_money": {
+                "amount": "0.00",
+                "currency_code": "INR"
+            },
+            "presentment_money": {
+                "amount": "0.00",
+                "currency_code": "INR"
+            }
+        },
+        "discounted_price_set": {
+            "shop_money": {
+                "amount": "0.00",
+                "currency_code": "INR"
+            },
+            "presentment_money": {
+                "amount": "0.00",
+                "currency_code": "INR"
+            }
+        },
+        "discount_allocations": [],
+        "tax_lines": []
+    }],
+    "billing_address": {
+        "first_name": "Asnsb",
+        "address1": "MMM HALL OF RESIDENCE,SDS BLOCK,ROOM NO 334 , IIT KGP",
+        "phone": null,
+        "city": "Select",
+        "zip": "721302",
+        "province": "Andhra Pradesh",
+        "country": "India",
+        "last_name": "Singh",
+        "address2": "IIT KGP",
+        "company": null,
+        "latitude": {
+            "$numberDouble": "22.321571"
+        },
+        "longitude": {
+            "$numberDouble": "87.3012327"
+        },
+        "name": "Asnsb Singh",
+        "country_code": "IN",
+        "province_code": "AP"
+    },
+    "shipping_address": {
+        "first_name": "Asnsb",
+        "address1": "MMM HALL OF RESIDENCE,SDS BLOCK,ROOM NO 334 , IIT KGP",
+        "phone": null,
+        "city": "Select",
+        "zip": "721302",
+        "province": "Andhra Pradesh",
+        "country": "India",
+        "last_name": "Singh",
+        "address2": "IIT KGP",
+        "company": null,
+        "latitude": {
+            "$numberDouble": "22.321571"
+        },
+        "longitude": {
+            "$numberDouble": "87.3012327"
+        },
+        "name": "Asnsb Singh",
+        "country_code": "IN",
+        "province_code": "AP"
+    },
+    "client_details": {
+        "browser_ip": "203.110.242.16",
+        "accept_language": "en-US,en;q=0.9",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36",
+        "session_hash": null,
+        "browser_width": {
+            "$numberInt": "1440"
+        },
+        "browser_height": {
+            "$numberInt": "821"
+        }
+    },
+    "payment_details": {
+        "credit_card_bin": "1",
+        "avs_result_code": null,
+        "cvv_result_code": null,
+        "credit_card_number": "•••• •••• •••• 1",
+        "credit_card_company": "Bogus"
+    },
+    "customer": {
+        "id": {
+            "$numberDouble": "3170069807243"
+        },
+        "email": null,
+        "accepts_marketing": false,
+        "created_at": "2020-02-29T11:44:45-05:00",
+        "updated_at": "2020-03-01T07:18:47-05:00",
+        "first_name": "Asnsb",
+        "last_name": "Singh",
+        "orders_count": {
+            "$numberInt": "0"
+        },
+        "state": "disabled",
+        "total_spent": "0.00",
+        "last_order_id": null,
+        "note": null,
+        "verified_email": true,
+        "multipass_identifier": null,
+        "tax_exempt": false,
+        "phone": "+918116986080",
+        "tags": "",
+        "last_order_name": null,
+        "currency": "INR",
+        "accepts_marketing_updated_at": "2020-03-01T07:18:47-05:00",
+        "marketing_opt_in_level": null,
+        "admin_graphql_api_id": "gid://shopify/Customer/3170069807243",
+        "default_address": {
+            "id": {
+                "$numberDouble": "3154302206091"
+            },
+            "customer_id": {
+                "$numberDouble": "3170069807243"
+            },
+            "first_name": "Asnsb",
+            "last_name": "Singh",
+            "company": null,
+            "address1": "MMM HALL OF RESIDENCE,SDS BLOCK,ROOM NO 334 , IIT KGP",
+            "address2": "IIT KGP",
+            "city": "Select",
+            "province": "Andhra Pradesh",
+            "country": "India",
+            "zip": "721302",
+            "phone": null,
+            "name": "Asnsb Singh",
+            "province_code": "AP",
+            "country_code": "IN",
+            "country_name": "India",
+            "default": true
+        }
+    },
+    "__v": {
+        "$numberInt": "0"
+    }
+}
