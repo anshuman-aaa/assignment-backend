@@ -1,11 +1,13 @@
 const express = require("express");
 const User = require("../modal/user");
 const Facility = require("../modal/facility");
+const auth = require("../../../Middleware/auth");
 const router = new express.Router();
 // const auth = require("../../../Middleware/auth");
 router.post("/users/register", async (req, res) => {
   const user = new User(req.body);
   try {
+    console.log(req.body)
     await user.save();
     const token = await user.generateAuthToken();
     const data = {
@@ -39,73 +41,18 @@ router.post("/users/login", async (req, res) => {
   }
 });
 
-router.post("/api/facility", async (req, res) => {
+router.post("/user/logout", async (req, res) => {
   try {
-    const facility = new Facility(req.body);
-    facility.save();
-    res.status(201).send(facility);
+    
+    req.body = JSON.parse(req.body)
+    console.log(req.body)
+    req.body.tokens = req.body.tokens.filter(token => {
+      return token.token !== req.token;
+    });
+    await req.user.save();
+    res.send();
   } catch (e) {
-    console.log(e);
-  }
-});
-
-router.post("/api/book",  async (req, res) => {
-  try {
-    // console.log(req.body);
-    const { email, slot, facId } = req.body;
-    if (!(await User.findOne({ email }))) {
-      return res.send({
-        success: false,
-        msg: "User With this email doesnt exist"
-      });
-    }
-    const { booking } = await Facility.findOne({ _id: facId }).lean();
-    // console.log(booking);
-    if (!booking) {
-      await Facility.updateOne(
-        { _id: facId },
-        {
-          $set: {
-            booking: [{
-              email,
-              slot
-            }]
-          }
-        }
-      );
-      return res
-        .status(200)
-        .send({ success: true, msg: "Successfully registered for the slot!" });
-    }
-    for (let i = 0; i < booking.length; i++) {
-      if (booking[i].slot === slot)
-        return res.send({ success: false, msg: "slot already booked! Please choose other slot." });
-    }
-    await Facility.updateOne(
-      { _id: facId },
-      {
-        $push: {
-          booking: {
-            email,
-            slot
-          }
-        }
-      }
-    );
-    res
-      .status(200)
-      .send({ success: true, msg: "Successfully registered for the slot!" });
-  } catch (e) {
-    console.log(e);
-  }
-});
-
-router.get("/api/fac", async (req, res) => {
-  try {
-    const result = await Facility.find({});
-    res.json(result);
-  } catch (e) {
-    console.log(e);
+    res.status(500).send();
   }
 });
 
